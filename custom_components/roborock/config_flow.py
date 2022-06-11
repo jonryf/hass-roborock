@@ -15,7 +15,7 @@ CONFIG_SCHEMA = vol.Schema(
         vol.Required(CONF_NAME): str,
         vol.Required(CONF_HOST): str,
         vol.Required(CONF_DEVICE_ID): str,
-        vol.Required(CONF_TOKEN): vol.All(str, vol.Length(min=16, max=16)),
+        vol.Required(CONF_TOKEN): vol.All(str, vol.Length(min=32, max=32)),
         vol.Optional(CONF_MODEL): str,
     }
 )
